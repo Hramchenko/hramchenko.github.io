@@ -278,12 +278,21 @@ ul {
     padding-left: 2.5rem;
 }
 
+.contact_container h2 {
+    font-family: poppins_semibold;
+    padding-left: 2.5rem;
+}
+
 .contact_container object {
     vertical-align: middle;
 }
 
 .contact_container a {
     color: white;
+}
+
+#main_text a {
+    font-weight: bold;
 }
 
 

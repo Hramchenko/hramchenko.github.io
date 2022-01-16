@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 80em 1fr;
+    grid-template-rows: 3em 20em 1fr;
+    grid-template-areas: "header header header" "left_skip preface right_skip" "left_skip projects_list right_skip";
+    width: 100%;
+    min-height: 100%;
+}
+
+.upper_margin {
+    grid-area: header;
+}
+
+.preface h1 {
+    text-align: center;
+    font-family: poppins_semibold;
+    text-transform: uppercase;
+}
+
+.preface {
+    grid-area: preface;
+    margin-top: 3em;
+}
+
+.preface p {
+    font-size: 1.5em;
+}
+
+.left_skip {
+    grid-area: left_skip;
+}
+
+.right_skip {
+    grid-area: right_skip;
+}
+
+.projects_list {
+    grid-area: projects_list;
+}
+
+.project {
+    display: inline-grid;
+    grid-template-columns: 1fr 20em;
+    grid-template-rows: 3em 3em 1fr;
+    grid-template-areas: "project_name project_logo" "project_brief project_logo" "project_description project_logo";
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    margin-bottom: 7rem;
+}
+
+.project_name {
+    grid-area: project_name;
+    margin: 1rem;
+}
+
+.project_brief {
+    grid-area: project_brief;
+    margin: 1rem;
+    font-style: italic;
+    color: grey;
+}
+
+.project_description {
+    grid-area: project_description;
+    margin: 1rem;
+}
+
+.project_logo {
+    grid-area: project_logo;
+}

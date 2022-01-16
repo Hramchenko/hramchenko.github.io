@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "avenir_light";
+    src: url("fonts/Avenir\ LT\ 35\ Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "avenir_heavy";
+    src: url("fonts/Avenir\ LT\ 85\ Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins_semibold";
+    src: url("fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0 auto;
+    font-family: avenir_light;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s linear 0s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+nav ul li {
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+nav .me a {
+    font-family: poppins_semibold;
+}
+
+nav div {
+    margin-left: 1em;
+}
+
+.main_color {
+    background-color: #008eab;
+}
+
+object {
+    pointer-events: none;    
+}
+
